@@ -2,13 +2,13 @@
 # SPDX-License-Identifier: MPL-2.0
 
 provider "aws" {
-  region = "us-east-2"
+  region = "ap-southeast-2"
 }
 
 data "aws_availability_zones" "available" {}
 
 locals {
-  cluster_name = "education-eks-${random_string.suffix.result}"
+  cluster_name = "eks-${random_string.suffix.result}"
 }
 
 resource "random_string" "suffix" {
