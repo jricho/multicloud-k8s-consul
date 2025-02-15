@@ -1,5 +1,8 @@
 # aks/terraform.tfvars
 
+# notes
+notes.md
+
 # Local .terraform directories
 **/.terraform/*
 
